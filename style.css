@@ -60,7 +60,8 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-image: url("background.jpg");
+    font-family: 'Raleway', sans-serif;
 }
 
 [tabindex="-1"]:focus {
@@ -75,7 +76,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -368,10 +369,12 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 h2, .h2 {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 h3, .h3 {
@@ -2392,6 +2395,7 @@ textarea.form-control {
     line-height: 1.5;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-top: 2rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2421,36 +2425,36 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #ff6d71;
+    border-color: #ff6d71;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #cb5356;
+    border-color: #cb5356;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #0062cc;
-    border-color: #005cbf;
+    color: #212529;
+    background-color: #dae0e5;
+    border-color: #d3d9df;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
 .btn-secondary {
@@ -4561,6 +4565,7 @@ input[type="button"].btn-block {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 .card > hr {
@@ -10037,10 +10042,24 @@ a.text-dark:hover, a.text-dark:focus {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-[class*="col-"], footer {
-    background-color: lightgreen;
-    border: 2px solid black;
-    border-radius: 6px;
-    line-height: 40px;
+.centered {
     text-align: center;
+    align-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grille {
+    border: 2px solid black;
+    height: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+.case {
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
 }
