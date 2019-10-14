@@ -19,7 +19,7 @@ class Game {
         let player = new Player();
         this.playerTab = player.getPlayerTab();
         player.whoCanPlay();
-        table.appendChild(body);
+        table.appendChild(tbody);
 
         for (let i = 0; i < this.row; i++) {
             let tr = document.createElement('tr');
@@ -39,7 +39,7 @@ class Game {
         }
         this.app.appendChild(table);
         this.createNoAccess();
-        this.createAmmo();
+        this.createWeapon();
         this.createPlayer()
     }
 

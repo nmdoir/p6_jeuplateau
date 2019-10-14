@@ -1,5 +1,7 @@
 import { Game } from "./Game";
 
-let game = new Game(10, 10);
+$(document).ready(function() {
+        let game = new Game(10, 10);
+        game.createGrid();
+    });
 
-game.createBoard();

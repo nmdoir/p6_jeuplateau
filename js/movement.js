@@ -2,24 +2,24 @@ import {Player} from "./Player"
 
 class Movement {
     move(idCase, playerTab) {
-        let player = null
-        for (let i = 0, i < playerTab.length, i++) {
-           if (playerTab[i].move == true) {
+        let player = null;
+        for (let i = 0; i < playerTab.length; i++) {
+           if (playerTab[i].move === true) {
                player = playerTab[i]
            }
         }
     let currentCase = document.getElementById(player.position);
     let nextCase = document.getElementById(idCase);
-    this.availableCases(nextCase, currentCase, player, playerTab)
+    this.availableCases(nextCase, currentCase, player, playerTab);
     return playerTab
 }
 
 //pas compris cette fonction
 availableCases(nextCase,currentCase, player, playerTab){
     const LIMIT_MOVE = 3;
-    let test = new Player()
+    let test = new Player();
 
-    if(nextCase.id != currentCase.id && !nextCase.hasAttribute('data-player')
+    if(nextCase.id !== currentCase.id && !nextCase.hasAttribute('data-player')
         && !nextCase.hasAttribute('data-accesscase')) {
         // Update the player position
         nextCase.setAttribute('data-class', currentCase.dataset.class);
@@ -34,7 +34,7 @@ availableCases(nextCase,currentCase, player, playerTab){
         player.position = nextCase.id;
         player.countMove++;
 
-        if(player.countMove == LIMIT_MOVE){
+        if(player.countMove === LIMIT_MOVE){
             let d =  test.allowPlayerMovement(playerTab, player)
         }
         return true;

@@ -92,7 +92,7 @@ class Player {
     getWhoCanPlay() {
         for (let i = 0; i < this.playerTab.length; i++)
         {
-            if(this.playerTab[i].move == true) {
+            if(this.playerTab[i].move === true) {
                 return this.player[i]
             }
         }
@@ -103,12 +103,12 @@ class Player {
     //à quoi correspondent players et player? déclarés où?
     {
         player.countMove = 0;
-        if(players[0].move == true){
+        if(players[0].move === true){
             players[0].move = false;
             players[1].move = true;
             console.log(players[1]); //ligne à supprimer?
             console.log('player 0 to false') //ligne à supprimer?
-        }else if(players[1].move == true){
+        }else if(players[1].move === true){
             players[1].move = false;
             players[0].move = true;
             console.log(players[0]); //ligne à supprimer?
