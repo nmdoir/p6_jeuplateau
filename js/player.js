@@ -8,7 +8,7 @@ class Player {
         this.playerTab = [
             {
                 "id":0,
-                "nom": this.name, // "Soma"
+                "name": this.name, // "Soma"
                 "life": this.life,
                 "weapon": this.weapon,
                 "move": this.move,
@@ -17,7 +17,7 @@ class Player {
             },
             {
                 "id":0,
-                "nom": this.name, // "Julien"
+                "name": this.name, // "Julien"
                 "life": this.life,
                 "weapon": this.weapon,
                 "move": this.move,

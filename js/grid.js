@@ -1,10 +1,11 @@
 class Grid {
     constructor(attributeFirst, attributeSecond, attributeThird, gridLength) {
-        this.attributeFirst = attributeFirst ? attributeFirst : null;
+        this.attributeFirst = attributeFirst ? attributeFirst : null; //pas compris
         this.attributeSecond = attributeSecond ? attributeSecond : null;
         this.attributeThird = attributeThird ? attributeThird : null;
         this.gridLength = gridLength
     }
+    // attributes?
 
     browseTab() {
         let randomInt = 0;
